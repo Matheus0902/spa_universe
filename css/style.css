@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root{
+  font-size: 62.5%;
+
+  --nav-color: #C4C4CC;
+  --tt-p-color: #E1E1E6;
+}
+
+body{
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  background-image: url("../assets/mountains.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  padding: 4rem 7.2rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+nav img {
+  width: 4.9rem;
+  height: 4.2rem;
+}
+
+nav a{
+  padding: .1rem 0;
+  color: var(--nav-color);
+  font-size: 2.1rem;
+  line-height: 2.1rem;
+}
+
+nav a:nth-child(3){
+  width: 11rem;
+  text-align: center;
+}
+
+nav a:hover{
+  color: white;
+  font-weight: 700;
+}
+
+main{
+  margin-top: 17rem;
+  text-align: center;
+}
+
+.pages{
+  margin-top: 6.3rem;
+  text-align: left;
+  padding: 0 10rem;
+}
+
+main h1{
+  color: var(--tt-p-color);
+  font-size: 4.8rem;
+}
+
+main button{
+  margin-top: 2.4rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  padding: 1.2rem 3.2rem;
+  background: 0;
+  color: white;
+  border: .2rem solid white;
+  border-radius: .5rem;
+}
+
+main p{
+  max-width: 64rem;
+  font-size: 1.8rem;
+  margin-top: 1.6rem;
+  line-height: 160%;
+  color: var(--tt-p-color);
+}
+
+@media (max-width: 400px){
+
+  #app{
+    max-width: 40rem;
+  }
+
+  nav{
+    padding: 5rem 0;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  nav img{
+    display: none;
+  }
+
+  nav a{
+    font-size: 1.8rem;
+  }
+
+  main{
+    margin-top: 8rem;
+  }
+
+  main h1{
+    font-size: 3.5rem;
+    padding: 3rem;
+  }
+
+  main button{
+    margin-top: 0;
+    padding: .8rem 1.5rem;
+  }
+
+  .pages{
+    margin-top: 2rem;
+    padding: 0 2rem;
+    text-align: justify;
+  }
+
+  .pages h1{
+    text-align: center;
+  }
+}
